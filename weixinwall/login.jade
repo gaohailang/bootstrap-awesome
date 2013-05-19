@@ -1,0 +1,50 @@
+extends ../_base_bt_layout
+
+block head
+    link(rel='stylesheet', href='http://www.weixinwall.com/dxhand/resources/css/wall.css')
+block content
+    .wrapper.
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/weixinwall">
+                  微信墙
+                </a>
+                <ul class="nav">
+                    <li><a href="/weixinwall">首页</a></li>
+                    <li><a href="/weixinwall/register" class="active">申请</a></li>
+                    <li><a href="/weixinwall/admin">管理</a></li>
+                            </ul>
+            </div>
+          </div>
+        </div>﻿
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                <a href="#">首页</a> <span class="divider">/</span>
+                </li>
+                <li class="active">管理</li>
+            </ul>
+            <form class="form-horizontal login-form">
+                <div class="control-group">
+                    <label class="control-label" for="login-email">Email</label>
+                    <div class="controls">
+                        <input type="text" id="login-email" placeholder=""/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="login-password">密码</label>
+                    <div class="controls">
+                        <input type="password" id="login-password" placeholder=""/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="button" class="login-btn btn">登录</button>
+                    </div>
+                </div>
+            </form>
+            <div class="login-tips">
+                还没注册?<a href="/weixinwall/register">立即注册</a>
+            </div>
+        </div>﻿<div style="display:none">

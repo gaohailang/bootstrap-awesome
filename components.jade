@@ -1,0 +1,438 @@
+extends _layout
+
+block page_style
+  include widgets/ui_components/page_style
+
+block content
+    .content
+      .container-fluid
+        .row-fluid
+          h2 Buttons
+          table.table
+            thead
+              tr
+                th Button
+                th Class
+                th Description
+              tr
+                td: button.btn(type='button') Button
+                td: code btn
+                td Standard gray button with gradient
+              tr
+                td: button.btn.btn-primary(type='button') Button
+                td: code btn btn-primary
+                td Provides extra visual weight and identifies the primary action in a set of buttons
+              tr
+                td: button.btn.btn-inverse(type='button') Button
+                td: code btn btn-inverse
+                td Alternate dark gray button, not tied to a semantic action or use
+              tr
+                td: button.btn.btn-link(type='button') Link
+                td: code btn btn-link
+                td Deemphasize a button by making it look like a link while maintaining button behavior
+          h2 Dropdown Buttons
+          .sample-buttons(style='margin: 0;')
+            .btn-group
+              button.btn.dropdown-toggle(data-toggle='dropdown')
+                | Button
+                span.caret
+              ul.dropdown-menu
+                li: a(href='#') Action
+                li: a(href='#') Another action
+                li: a(href='#') Something else here
+                li.divider
+                li: a(href='#') Separated link
+            //
+               /btn-group 
+            .btn-group
+              button.btn.btn-primary.dropdown-toggle(data-toggle='dropdown')
+                | Button
+                span.caret
+              ul.dropdown-menu
+                li: a(href='#') Action
+                li: a(href='#') Another action
+                li: a(href='#') Something else here
+                li.divider
+                li: a(href='#') Separated link
+            //
+               /btn-group 
+            .btn-group
+              button.btn.btn-danger.dropdown-toggle(data-toggle='dropdown')
+                | Button
+                span.caret
+              ul.dropdown-menu
+                li: a(href='#') Action
+                li: a(href='#') Another action
+                li: a(href='#') Something else here
+                li.divider
+                li: a(href='#') Separated link
+            //
+               /btn-group 
+          div(style='height: 1em;')
+          .sample-buttons(style='margin: 0;')
+            .btn-group
+              button.btn Button
+              button.btn.dropdown-toggle(data-toggle='dropdown')
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            //
+               /btn-group 
+          h2 Toggle Buttons
+          #warning-toggle-button(style='margin-right: 1em;')
+            input(type='checkbox')
+          #info-toggle-button(style='margin-right: 1em;')
+            input(type='checkbox')
+          #success-toggle-button(style='margin-right: 1em;')
+            input(type='checkbox')
+          #danger-toggle-button
+            input(type='checkbox')
+          h2 Filters
+          ul.filter.nav.nav-pills
+            li.active
+              a(href='#all', data-filter='.filter-demo-item') All
+            li
+              a(href='#images', data-filter='.sampleFilterOne') Filter Some
+            li
+              a(href='#videos', data-filter='.sampleFilterTwo') Filter Others
+          #filter-demo(style='max-width: 400px;')
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item
+            .filter-demo-item.sampleFilterTwo
+            .filter-demo-item.sampleFilterOne.sampleFilterTwo
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterOne.sampleFilterTwo
+            .filter-demo-item.sampleFilterTwo
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterTwo.sampleFilterOne
+            .filter-demo-item.sampleFilterOne.sampleFilterTwo
+            .filter-demo-item.sampleFilterTwo
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterOne.sampleFilterTwo
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterTwo
+            .filter-demo-item.sampleFilterTwo.sampleFilterOne
+            .filter-demo-item.sampleFilterOne.sampleFilterTwo
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterTwo
+            .filter-demo-item.sampleFilterTwo.sampleFilterOne
+            .filter-demo-item.sampleFilterOne.sampleFilterTwo
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterTwo
+            .filter-demo-item.sampleFilterTwo
+            .filter-demo-item.sampleFilterOne
+            .filter-demo-item.sampleFilterOne.sampleFilterTwo
+            .filter-demo-item.sampleFilterOne.sampleFilterTwo
+          .clearfix
+          h2 Button Groups
+          .btn-group
+            button.btn Left
+            button.btn Middle
+            button.btn Right
+          .btn-toolbar
+            .btn-group
+              button.btn 1
+              button.btn 2
+              button.btn 3
+              button.btn 4
+            .btn-group
+              button.btn 5
+              button.btn 6
+              button.btn 7
+            .btn-group
+              button.btn 8
+          h2 Alerts
+          .row-fluid
+            .span6
+              .alert.fade.in
+                button.close(type='button', data-dismiss='alert') ×
+                strong Holy guacamole!
+                | This is an alert for your awesome web application.
+              .alert.alert-info.fade.in
+                button.close(type='button', data-dismiss='alert') ×
+                strong Holy guacamole!
+                | This is an alert for your awesome web application.
+              .alert.alert-success.fade.in
+                button.close(type='button', data-dismiss='alert') ×
+                strong Holy guacamole!
+                | This is an alert for your awesome web application.
+              .alert.alert-error.fade.in
+                button.close(type='button', data-dismiss='alert') ×
+                strong Holy guacamole!
+                | This is an alert for your awesome web application.
+        h2 Loading Icons
+        img.loading(alt='loading', src='images/loading-icons/loading1.gif')
+        img.loading(alt='loading', src='images/loading-icons/loading2.gif')
+        img.loading(alt='loading', src='images/loading-icons/loading4.gif')
+        img.loading(alt='loading', src='images/loading-icons/loading3.gif')
+        img.loading(alt='loading', src='images/loading-icons/loading6.gif')
+        img.loading(alt='loading', src='images/loading-icons/loading7.gif')
+        img.loading(alt='loading', src='images/loading-icons/loading8.gif')
+        img.loading(alt='loading', src='images/loading-icons/loading9.gif')
+        img.loading(alt='loading', src='images/loading-icons/loading5.gif')
+        img.loading(alt='loading', src='images/loading-icons/loading10.gif')
+        .row-fluid
+          .span6
+            h2 Fancy Tabs
+            .fancy-tab-container
+              ul.nav.nav-tabs.three-tabs.fancy
+                li.active
+                  a(href='#fancya1', data-toggle='tab') Orders
+                li
+                  a(href='#fancya2', data-toggle='tab') Promotions
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | Deals
+                    b.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='#fancya3', data-toggle='tab') Dump Truck
+                    li
+                      a(href='#fancya4', data-toggle='tab') Police Car
+              .tab-content
+                #fancya1.tab-pane.fade.in.active
+                  ul.cards
+                    li
+                      | Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                    li
+                      | Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack.
+                    li
+                      | Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master.
+                #fancya2.tab-pane.fade
+                  p
+                    | Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR.
+                  p
+                    | Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                  p
+                    | Nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                #fancya3.tab-pane.fade
+                  p
+                    | Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+                  p
+                    | Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown.
+                  p DIY synth PBR banksy irony.
+                  p Pitchfork sustainable tofu synth chambray yr.
+                #fancya4.tab-pane.fade
+                  p
+                    | Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical.
+                  p
+                    | Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.
+          .span6
+            h2 Normal Tabs
+            ul#myTab.nav.nav-tabs.two-tabs
+              li.active
+                a(href='#normal-upgrade1', data-toggle='tab') Upgrade Account
+              li
+                a(href='#normal-upgrade2', data-toggle='tab') Why Upgrade?
+            #myTabContent.tab-content
+              #normal-upgrade1.tab-pane.fade.in.active
+                p
+                  | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+              #normal-upgrade2.tab-pane.fade
+                p
+                  | Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+        .row-fluid
+          .span4
+            h2 Alerts
+            button.btn.btn-danger.show-notification Click for a random notification
+            .notifications.top-right
+            .notifications.bottom-right
+            .notifications.top-left
+            .notifications.bottom-left
+          .span4
+            h2 Dialog
+            a.btn.btn-warning(href='#myModal', role='button', data-toggle='modal') Launch demo modal
+            #myModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                h3#myModalLabel Modal header
+              .modal-body
+                p One fine body…
+              .modal-footer
+                button.btn(data-dismiss='modal', aria-hidden='true') Close
+                button.btn.btn-primary Save changes
+          .span4
+            style
+              #createGroup .inlineblock {
+                display: inline-block;
+              }
+              #createGroup .modal-body>p{
+                line
+              }
+            h2 创建群组
+            a.btn.btn-warning(href='#createGroup', role='button', data-toggle='modal') 创建群组
+            #createGroup.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                h3#myModalLabel 创建群组
+              .modal-body
+                  form.form-horizontal
+                    p.control-group
+                      label(for="input01")
+                        | 群组名称    
+                        input.input-xlarge(type="text", name="input01", placeholder="群组名称最多25个中文字符或50个英文")
+                    p.control-group
+                      i.icon-lock
+                      span 群组内容只有成员可见
+                    p.control-group
+                      label.checkbox
+                        input(type="checkbox")
+                        span 我已经阅读并接受了
+                          a(href="#") <<百度用户协议>>
+              .modal-footer
+                button.btn.btn-primary 完成
+        .row-fluid
+          .span4
+            h2 Fancy Pagination
+            .fancy.pagination(style='margin-top: 0px;')
+              ul
+                li: a(href='#') «
+                li: a(href='#') 1
+                li: a(href='#') 2
+                li.active: a(href='#') 3
+                li: a(href='#') 4
+                li: a(href='#') 5
+                li: a(href='#') »
+          .span4
+            h2 Classic Pagination
+            .pagination(style='margin-top: 0px;')
+              ul
+                li: a(href='#') «
+                li: a(href='#') 1
+                li: a(href='#') 2
+                li: a(href='#') 3
+                li: a(href='#') 4
+                li: a(href='#') 5
+                li: a(href='#') »
+          .span4
+            h2 Auto Complete
+            input(type='text', style='margin: 0 auto;', data-provide='typeahead', data-items='4', data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]')
+        h2 Labels
+        table.table.table-bordered.table-striped
+          thead
+            tr
+              th Labels
+              th Markup
+          tbody
+            tr
+              td: span.label Default
+              td: code <span class="label">Default</span>
+            tr
+              td: span.label.label-success Success
+              td: code <span class="label label-success">Success</span>
+            tr
+              td: span.label.label-warning Warning
+              td: code <span class="label label-warning">Warning</span>
+            tr
+              td: span.label.label-important Important
+              td: code <span class="label label-important">Important</span>
+            tr
+              td: span.label.label-info Info
+              td: code <span class="label label-info">Info</span>
+            tr
+              td: span.label.label-inverse Inverse
+              td: code <span class="label label-inverse">Inverse</span>
+        h2 Badges
+        table.table.table-bordered.table-striped
+          thead
+            tr
+              th Name
+              th Example
+              th Markup
+          tbody
+            tr
+              td Default
+              td: span.badge 1
+              td: code <span class="badge">1</span>
+            tr
+              td Success
+              td: span.badge.badge-success 2
+              td: code <span class="badge badge-success">2</span>
+            tr
+              td Warning
+              td: span.badge.badge-warning 4
+              td: code <span class="badge badge-warning">4</span>
+            tr
+              td Important
+              td: span.badge.badge-important 6
+              td: code <span class="badge badge-important">6</span>
+            tr
+              td Info
+              td: span.badge.badge-info 8
+              td: code <span class="badge badge-info">8</span>
+            tr
+              td Inverse
+              td: span.badge.badge-inverse 10
+              td: code <span class="badge badge-inverse">10</span>
+        h2 Progress Bars
+        h3 Animated
+        .progress.progress-striped.active
+          .bar(style='width: 50%;')
+        h3 Stacked
+        .progress
+          .bar.bar-success(style='width: 35%;')
+          .bar.bar-warning(style='width: 20%;')
+          .bar.bar-danger(style='width: 10%;')
+        .row-fluid
+          .span3
+            h2 Date Picker
+            .input-append.datepicker.date(data-date='12-02-2012', data-date-format='mm-dd-yyyy')
+              input#date-picker-input.span6(size='16', type='text', value='12-02-2012')
+              span.add-on
+                i.icon-th
+          .span3
+            h2 Time Picker
+            .input-append.bootstrap-timepicker-component
+              input.span6.timepicker.input-small(type='text', value='8:45 PM')
+              span.add-on
+                i.icon-time
+          .span3
+            h2 Color Picker
+            .input-append.color(data-color='#8181D4', data-color-format='hex')
+              input.span6(type='text', value='#8181D4')
+              span.add-on
+                i(style='background-color: #8181D4;')
+          .span3
+            h2 Spinner
+            #MySpinner.spinner
+              input.input-mini.spinner-input(type='text')
+              .spinner-buttons.btn-group.btn-group-vertical
+                button.btn.spinner-up
+                  i.icon-chevron-up
+                button.btn.spinner-down
+                  i.icon-chevron-down
+            .clearfix
+        .row-fluid
+          .span3
+            h2 Language Selector
+            form.bs-docs-example.form-inline
+              select.input-medium.languages(data-language='en')
+        h2 Tooltips
+        ul.unstyled
+          li(style='float: left; margin-left: 1em; margin-bottom: 1em;')
+            a.btn(href='#', rel='tooltip', data-placement='top', data-original-title='Tooltip on top') Tooltip on top
+        .clearfix
+        h2 Popover
+        ul.unstyled
+          li(style='float: left; margin-left: 1em; margin-bottom: 1em;')
+            button.btn.popover-btn(rel='popover', data-placement='top', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-original-title='Popover on top') Popover on top
+        .clearfix
+        h2 QR Codes
+        #qrcode
+        h2 HTML Editor
+        textarea#some-textarea(placeholder='Enter text ...', style='width: 95%; max-width: 810px; height: 200px;')
+          include includes/footer
+
+block page_script
+  include widgets/ui_components/page_script

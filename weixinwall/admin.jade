@@ -1,0 +1,52 @@
+extends ../_base_bt_layout
+block head
+    style
+        .add-wall-btn{
+            margin-bottom: 10px;
+        }
+block content
+    .wrapper.
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="http://www.weixinwall.com/dxhand/wall">
+                  微信墙
+                </a>
+                <ul class="nav">
+                    <li><a href="http://www.weixinwall.com/dxhand/wall">首页</a></li>
+                    <li><a href="/weixinwall/register" class="active">申请</a></li>
+                    <li><a href="/weixinwall/admin">管理</a></li>
+                                    <li><a href="/weixinwall/setting">个人设置</a></li>
+                        <li><a href="/weixinwall/logout">注销</a></li>
+                            </ul>
+            </div>
+          </div>
+        </div>﻿
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="http://www.weixinwall.com/dxhand/wall">首页</a> <span class="divider">/</span></li>
+                <li class="active"><a href="/weixinwall/admin">管理</a></li>
+            </ul>
+            <a href="/weixinwall/new" class="btn add-wall-btn pull-right">+新微信墙</a>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>简称</th>
+                        <th>名称</th>
+                        <th>操作</th>
+                        <th>展示</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                    <td>1</td>
+                    <td>gg</td>
+                    <td>gg</td>
+                    <td><a href="/weixinwall/settings/208" target="_blank">管理</a></td>
+                    <td><a href="/weixinwall/208" target="_blank">展示</a></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>﻿<div style="display:none">

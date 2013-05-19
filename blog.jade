@@ -1,0 +1,96 @@
+extends _layout
+
+block page_style
+    include widgets/blog/page_style
+
+block content
+    .content
+        .container-fluid
+            .row-fluid
+              h2 Name of the Blog
+              ul.filter.nav.nav-pills
+                li.active
+                  a(href='#all', data-filter='.blog-post') All
+                li
+                  a(href='#images', data-filter='.sampleFilterOnetrue') Updates
+                li
+                  a(href='#videos', data-filter='.sampleFilterTwotrue') News
+              #blog-posts
+                .row-fluid.blog-post.sampleFilterOnefalse.sampleFilterTwofalse
+                  .span12
+                    h4
+                      strong
+                        a(href='#') Title of the post
+                    .row-fluid
+                      a.thumbnail.pull-left(href='#')
+                        img(src='images/blog/442256_20337880.jpg', alt='')
+                      .post-summary
+                        p
+                          | Lorem ipsum dolor sit amet, id nec conceptam conclusionemque. Et eam tation option. Utinam salutatus ex eum. Ne mea dicit tibique facilisi, ea mei omittam explicari conclusionemque, ad nobis propriae quaerendum sea.
+                        p
+                          a.btn.btn-mini(href='#') Read more
+                    .row-fluid.details
+                      i.icon-user
+                      | by  
+                      a(href='#') Ashley
+                      | |  
+                      i.icon-calendar
+                      | January 16th, 2013  
+                      | |  
+                      i.icon-comment
+                      a(href='#') 3 Comments
+                      | |  
+                      i.icon-share
+                      a(href='#') 39 Shares
+                      | |  
+                      i.icon-tags
+                      | Tags  
+                      a(href='#')
+                        span.label.label-info Official
+                      a(href='#')
+                        span.label.label-info Announcements  
+                      a(href='#')
+                        span.label.label-info News  
+                      a(href='#')
+                        span.label.label-info New Features  
+                .row-fluid.blog-post.sampleFilterOnefalse.sampleFilterTwofalse
+                  .span12
+                    h4
+                      strong
+                        a(href='#') Title of the post
+                    .row-fluid
+                      a.thumbnail.pull-left(href='#')
+                        img(src='images/blog/472381_10949156.jpg', alt='')
+                      .post-summary
+                        p
+                          | Lorem ipsum dolor sit amet, id nec conceptam conclusionemque. Et eam tation option. Utinam salutatus ex eum. Ne mea dicit tibique facilisi, ea mei omittam explicari conclusionemque, ad nobis propriae quaerendum sea.
+                        p
+                          a.btn.btn-mini(href='#') Read more
+                    .row-fluid.details
+                      i.icon-user
+                      | by
+                      a(href='#') Ashley
+                      | |
+                      i.icon-calendar
+                      | January 16th, 2013
+                      | |
+                      i.icon-comment
+                      a(href='#') 3 Comments
+                      | |
+                      i.icon-share
+                      a(href='#') 39 Shares
+                      | |
+                      i.icon-tags
+                      | Tags
+                      a(href='#')
+                        span.label.label-info Official
+                      a(href='#')
+                        span.label.label-info Announcements
+                      a(href='#')
+                        span.label.label-info News
+                      a(href='#')
+                        span.label.label-info New Features
+            include includes/footer
+
+block page_script
+  include widgets/blog/page_script

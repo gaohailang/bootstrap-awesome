@@ -1,0 +1,85 @@
+extends ../_base_bt_layout
+
+block content
+    .wrapper.
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="http://www.weixinwall.com/dxhand/wall">
+                  微信墙
+                </a>
+                <ul class="nav">
+                    <li><a href="http://www.weixinwall.com/dxhand/wall">首页</a></li>
+                    <li><a href="http://www.weixinwall.com/dxhand/wall/register" class="active">申请</a></li>
+                    <li><a href="http://www.weixinwall.com/dxhand/wall/admin">管理</a></li>
+                                    <li><a href="http://www.weixinwall.com/dxhand/wall/setting">个人设置</a></li>
+                        <li><a href="http://www.weixinwall.com/dxhand/wall/logout">注销</a></li>
+                            </ul>
+            </div>
+          </div>
+        </div>﻿<script>
+            var activity_id='195';
+        </script>
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="http://www.weixinwall.com/dxhand/wall">首页</a> <span class="divider">/</span></li>
+                <li><a href="http://www.weixinwall.com/dxhand/wall/admin">管理</a> <span class="divider">/</span></li>
+                <li class="active">d</li>
+            </ul>
+            <form class="form-horizontal settings-form">
+                <div class="control-group">
+                    <label class="control-label" for="settings-name">活动名称</label>
+                    <div class="controls">
+                        <input type="text" id="settings-name" placeholder="" value="d"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="settings-call">活动简称</label>
+                    <div class="controls">
+                        <input type="text" id="settings-call" placeholder="不超过五个字" value="d"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="settings-check">是否开启审核</label>
+                    <div class="controls">
+                        <label class="radio">
+                          <input type="radio" name="settings-check" value="1" checked/>开启审核
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="settings-check" value="0" />不开启
+                        </label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="button" class="settings-btn btn">确定</button>
+                    </div>
+                </div>
+            </form>
+            <!--
+            <div class="settings-sidebar">
+                <div class="settings-textarea">
+                    <textarea></textarea>
+                </div>
+                <button class="btn settings-add-wall-btn">上墙</button>
+            </div>
+            -->
+            <div class="clearfix"></div>
+            <div class="tabbable">
+                <ul class="nav nav-tabs" id="myTab">
+                      <li class="active"><a href="#uncheck" data-toggle="tab">未上墙</a></li>
+                      <li><a href="#checked" data-toggle="tab">已上墙</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active nav nav-pills" id="uncheck">
+                        <div class="tab-admin clearfix">
+                            <a href="http://www.weixinwall.com/dxhand/wall/195" class="btn" target="_blank">查看活动墙</a>
+
+                            <button class="btn all-checked-btn fr" data-aid="195">全部上墙</button>
+                        </div>
+                                    </div>
+                    <div class="tab-pane nav nav-pills" id="checked">
+                                    </div>
+                </div>
+            </div>
+        </div>﻿<div style="display:none">

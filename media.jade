@@ -1,0 +1,137 @@
+extends _layout
+
+block page_style
+    include widgets/media/page_style
+
+block content
+    .content
+        .container-fluid
+            .row-fluid
+              h2
+                | Gallery
+                span.info Use the button below to filter items.
+              ul.filter.nav.nav-pills
+                li.active
+                  a(href='#all', data-filter='.element') All
+                li
+                  a(href='#images', data-filter='.sampleFilterOnetrue') Images
+                li
+                  a(href='#videos', data-filter='.sampleFilterTwotrue') Videos
+              #gallery.gallery(style='clear: both;')
+                .element.thumbnail.pull-left.sampleFilterOnefalse.sampleFilterTwofalse
+                  a(href='#')
+                    img(src='images/gallery/319768_8498.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 1
+                .element.thumbnail.pull-left.sampleFilterOnefalse.sampleFilterTwotrue
+                  a(href='#')
+                    img(src='images/gallery/403944_5580.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 2
+                .element.thumbnail.pull-left.sampleFilterOnetrue.sampleFilterTwotrue
+                  a(href='#')
+                    img(src='images/gallery/43616_6206.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 3
+                .element.thumbnail.pull-left.sampleFilterOnefalse.sampleFilterTwofalse
+                  a(href='#')
+                    img(src='images/gallery/442256_20337880.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 4
+                .element.thumbnail.pull-left.sampleFilterOnetrue.sampleFilterTwotrue
+                  a(href='#')
+                    img(src='images/gallery/463600_31373324.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 5
+                .element.thumbnail.pull-left.sampleFilterOnefalse.sampleFilterTwotrue
+                  a(href='#')
+                    img(src='images/gallery/472381_10949156.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 6
+                .element.thumbnail.pull-left.sampleFilterOnetrue.sampleFilterTwofalse
+                  a(href='#')
+                    img(src='images/gallery/485382_81894547.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 7
+                .element.thumbnail.pull-left.sampleFilterOnefalse.sampleFilterTwotrue
+                  a(href='#')
+                    img(src='images/gallery/503993_62595320.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 8
+                .element.thumbnail.pull-left.sampleFilterOnetrue.sampleFilterTwotrue
+                  a(href='#')
+                    img(src='images/gallery/544337_83543416.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 9
+                .element.thumbnail.pull-left.sampleFilterOnefalse.sampleFilterTwofalse
+                  a(href='#')
+                    img(src='images/gallery/625998_12886207.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 10
+                .element.thumbnail.pull-left.sampleFilterOnetrue.sampleFilterTwotrue
+                  a(href='#')
+                    img(src='images/gallery/737034_24905666.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 11
+                .element.thumbnail.pull-left.sampleFilterOnefalse.sampleFilterTwotrue
+                  a(href='#')
+                    img(src='images/gallery/760375_32906821.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 12
+                .element.thumbnail.pull-left.sampleFilterOnetrue.sampleFilterTwofalse
+                  a(href='#')
+                    img(src='images/gallery/789080_16753532.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 13
+                .element.thumbnail.pull-left.sampleFilterOnefalse.sampleFilterTwotrue
+                  a(href='#')
+                    img(src='images/gallery/888272_30368604.jpg')
+                  .image-data
+                    span.pull-right
+                      a(href='#')
+                        i.icon-thumbs-up
+                    span.title image 14
+                .clearfix
+            include includes/footer
+
+block page_script
+  include widgets/media/page_script

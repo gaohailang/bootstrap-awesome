@@ -1,0 +1,21 @@
+block page_script
+    script(src='lib/fancy-zoom/fancyzoom.js')
+    script
+                $(function(){
+                    var width = $(window).width();
+                    $(window).resize(function(){
+                        setTimeout(function(){
+                            $('#blog-posts').isotope('reLayout');}, 100);
+                    });
+
+                    $('.blog-post .thumbnail img').fancyZoom({closeOnClick: true, directory:'lib/fancy-zoom/img/'});
+
+                    $('#blog-posts').imagesLoaded( function(){
+                        $(this).isotope({
+                            resizable:false,
+                            layoutMode: 'straightDown'
+                        });
+                    });
+
+                    fancyFilter('.filter', '#blog-posts');
+                });

@@ -1,0 +1,130 @@
+.navbar
+	.navbar-inner
+		ul.nav.pull-right
+			li.hidden-phone
+				a(href='#', role='button') Settings
+			li#fat-menu.dropdown
+				a.dropdown-toggle(href='#', role='button', data-toggle='dropdown')
+					i.icon-user
+					| Jack Smith
+					i.icon-caret-down
+				ul.dropdown-menu
+					li
+						a(tabindex='-1', href='#') My Account
+					li.divider
+					li
+						a.visible-phone(tabindex='-1', href='#') Settings
+					li.divider.visible-phone
+					li
+						a(tabindex='-1', href='sign-in.html') Logout
+		a.brand(href='index.html') Awesome.
+#main-menu
+	#phone-navigation
+		select#phone-menu.selectnav
+			option(value='index.html', selected='selected')  Dashboard
+			option(value='reports.html')  Reports
+			option(value='components.html')  Components
+			option(value='pricing.html')  Pricing
+			option(value='')  Settings
+			option(value='sign-in.html') - Sign In Page
+			option(value='sign-up.html') - Sign Up Page
+			option(value='reset-password.html') - Reset Password Page
+			option(value='') ----------------------
+			option(value='index.html', selected='selected')  Dashboard
+			option(value='reports.html')  Reports
+			option(value='components.html')  UI Features
+			option(value='pricing.html')  Pricing
+			option(value='media.html')  Media
+			option(value='blog.html')  Blog
+			option(value='help.html')  Help
+			option(value='faq.html')  Faq
+			option(value='calendar.html')  Calendar
+			option(value='forms.html')  Forms
+			option(value='tables.html')  Tables
+			option(value='icons.html')  Font Awesome
+	ul.nav.nav-tabs
+		li.active
+			a(href='index.html')
+				i.icon-dashboard
+				span Dashboard
+		li
+			a(href='reports.html')
+				i.icon-bar-chart
+				span Reports
+		li
+			a(href='components.html')
+				i.icon-cogs
+				span Components
+		li
+			a(href='pricing.html')
+				i.icon-magic
+				span Pricing
+		li.dropdown
+			a.dropdown-toggle(href='#', data-toggle='dropdown')
+				i.icon-cog
+				| Settings
+				b.caret
+			ul.dropdown-menu
+				li
+					a(href='/sign-in.html')
+						span Sign-in Page
+				li
+					a(href='/sign-up.html')
+						span Sign-up Page
+				li
+					a(href='/reset-password.html')
+						span Forgot Password Page
+#sidebar-nav
+	ul#dashboard-menu.nav.nav-list
+		li.active
+			a(href='index.html')
+				i.icon-home
+				span Dashboard
+		li
+			a(href='reports.html')
+				i.icon-bar-chart
+				span Reports
+		li
+			a(href='components.html')
+				i.icon-briefcase
+				span UI Features
+		li
+			a(href='pricing.html')
+				i.icon-magic
+				span Pricing
+		li
+			a(href='media.html')
+				i.icon-film
+				span Media
+		li
+			a(href='blog.html')
+				i.icon-beaker
+				span Blog
+		li
+			a(href='help.html')
+				i.icon-question-sign
+				span Help
+		li
+			a(href='faq.html')
+				i.icon-book
+				span Faq
+		li
+			a(href='calendar.html')
+				i.icon-calendar
+				span Calendar
+		li
+			a(href='forms.html')
+				i.icon-tasks
+				span Forms
+		li
+			a(href='tables.html')
+				i.icon-table
+				span Tables
+		li.theme-mobile-hack
+			a(href='mobile.html')
+				i.icon-comment-alt
+				span Mobile
+		li
+			a(href='icons.html')
+				i.icon-heart
+				span Font Awesome

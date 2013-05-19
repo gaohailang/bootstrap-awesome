@@ -1,0 +1,26 @@
+extends _layout
+
+block content
+    .content
+      .container-fluid
+        .row-fluid
+          .span8.main-content
+            .row-fluid
+              .row-fluid
+                include widgets/index/pending_deals
+              .row-fluid
+                #three-summaries.row-fluid
+                  .span5
+                    include widgets/index/mailbox
+                  .span7
+                    include widgets/index/upcoming_events
+                  include widgets/index/inbox
+                  include widgets/index/top_users
+          .span4.sidebar
+            include widgets/index/latest_comments
+            include widgets/index/order_panel
+            include widgets/index/upgrade_panel
+          include includes/footer
+
+block scripts
+  script

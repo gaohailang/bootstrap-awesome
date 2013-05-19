@@ -1,0 +1,47 @@
+extends ../_base_bt_layout
+
+block content
+    .wrapper.
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="http://www.weixinwall.com/dxhand/wall">
+                  微信墙
+                </a>
+                <ul class="nav">
+                    <li><a href="http://www.weixinwall.com/dxhand/wall">首页</a></li>
+                    <li><a href="http://www.weixinwall.com/dxhand/wall/register" class="active">申请</a></li>
+                    <li><a href="http://www.weixinwall.com/dxhand/wall/admin">管理</a></li>
+                                    <li><a href="http://www.weixinwall.com/dxhand/wall/setting">个人设置</a></li>
+                        <li><a href="http://www.weixinwall.com/dxhand/wall/logout">注销</a></li>
+                            </ul>
+            </div>
+          </div>
+        </div>﻿<div class="container">
+            <ul class="breadcrumb">
+                <li>
+                <a href="#">首页</a> <span class="divider">/</span>
+                </li>
+                <li class="active">新建微信墙</li>
+            </ul>
+
+            <form class="form-horizontal add-form">
+                <div class="control-group">
+                    <label class="control-label" for="add-activity-name">活动名称</label>
+                    <div class="controls">
+                        <input type="text" id="add-activity-name" placeholder="用于显示在微信墙上"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="add-activity-call">活动简称</label>
+                    <div class="controls">
+                        <input type="text" id="add-activity-call" placeholder="上墙用, 不超过五个字"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="button" class="add-btn btn">添加</button>
+                    </div>
+                </div>
+            </form>
+        </div>﻿<div style="display:none">

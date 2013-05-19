@@ -1,0 +1,76 @@
+block page_script
+  script(src='lib/jquery.isotope.min.js')
+  script(src='lib/datepicker/js/bootstrap-datepicker.js', type='text/javascript')
+  script(src='lib/colorpicker/js/bootstrap-colorpicker.js', type='text/javascript')
+  script(src='lib/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js', type='text/javascript')
+  script(src='lib/bootstrap-timepicker/js/bootstrap-timepicker.js', type='text/javascript')
+  //- formhelper - countries, timezones, languages, states
+  script(src='lib/bootstrap-formhelpers/js/bootstrap-formhelpers-countries.en_US.js', type='text/javascript')
+  script(src='lib/bootstrap-formhelpers/js/bootstrap-formhelpers-countries.js', type='text/javascript')
+  script(src='lib/bootstrap-formhelpers/js/bootstrap-formhelpers-timezones.codes.js', type='text/javascript')
+  script(src='lib/bootstrap-formhelpers/js/bootstrap-formhelpers-timezones.js', type='text/javascript')
+  script(src='lib/bootstrap-formhelpers/js/bootstrap-formhelpers-languages.codes.js', type='text/javascript')
+  script(src='lib/bootstrap-formhelpers/js/bootstrap-formhelpers-languages.js', type='text/javascript')
+  script(src='lib/bootstrap-formhelpers/js/bootstrap-formhelpers-states.en_US.js', type='text/javascript')
+  script(src='lib/bootstrap-formhelpers/js/bootstrap-formhelpers-states.js', type='text/javascript')
+  script(src='lib/jquery-qrcode/jquery.qrcode.min.js', type='text/javascript')
+  script(src='lib/bootstrap-notify/bootstrap-notify.js', type='text/javascript')
+  script(src='lib/bootstrap-spinner/bootstrap-spinner.js', type='text/javascript')
+
+  script(src='lib/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.js')
+  script(src='lib/bootstrap-wysihtml5/dist/bootstrap-wysihtml5-0.0.2.min.js')
+
+  script(type='text/javascript')
+    $(function() {
+    $('.datepicker').datepicker();
+    $('.timepicker').timepicker();
+    $('.color').colorpicker();
+    $('.popover-btn').popover();
+    $('#MySpinner').spinner();
+    $('#some-textarea').wysihtml5({"stylesheets": ["lib/bootstrap-wysihtml5/lib/css/wysiwyg-color.css"]});
+    $('#qrcode').qrcode({render: 'table', width: 96,height: 96,text: "Hope you like the theme!"});
+    $('#warning-toggle-button').toggleButtons({
+    style: {
+    enabled: "warning",
+    disabled: "danger"
+    }
+    });
+    $('#danger-toggle-button').toggleButtons({
+    style: {
+    enabled: "danger",
+    disabled: "info"
+    }
+    });
+    $('#info-toggle-button').toggleButtons({
+    style: {
+    enabled: "info",
+    disabled: "success"
+    }
+    });
+    $('#success-toggle-button').toggleButtons({
+    style: {
+    enabled: "success",
+    disabled: "warning"
+    }
+    });
+    // Random Messages
+    var messages = [
+    [ 'bottom-right', 'success',     "What's up? This is a message." ],
+    [ 'bottom-right', 'info',     "What's up? This is a message."],
+    [ 'top-right',    'inverse',  "What's up? This is a message." ],
+    [ 'top-right',    'success',  "What's up? This is a message." ],
+    [ 'top-right',  'danger',   "What's up? This is a message." ],
+    [ 'bottom-left',  'warning',  "What's up? This is a message." ],
+    [ 'bottom-left', 'info',     "What's up? This is a message." ],
+    [ 'bottom-left',    'success',  "What's up? This is a message." ],
+    ];
+    $('.show-notification').click(function (e) {
+    var message = messages[Math.floor(Math.random() * messages.length)];
+    $('.' + message[0]).notify({
+    message: { text: message[2] },
+    type: message[1]
+    }).show();
+    });
+    $('#filter-demo').isotope();
+    fancyFilter('.filter', '#filter-demo');
+    }); //<--document.ready

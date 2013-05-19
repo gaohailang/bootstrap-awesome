@@ -1,0 +1,11 @@
+block page_script
+    script(src='lib/fancy-zoom/fancyzoom.js')
+    script(src="lib/jquery.isotope.min.js")
+    script
+            $(function(){
+                $('#gallery').imagesLoaded( function(){
+                    $(this).isotope();
+                });
+                fancyFilter('.filter', '#gallery');
+                $('#gallery img').fancyZoom({closeOnClick: true, directory:'lib/fancy-zoom/img/'});
+            });
